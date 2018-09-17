@@ -11,3 +11,13 @@ Use [[https://github.com/hrs/sensible-defaults.el][sensible-defaults.el]] for so
   (sensible-defaults/use-all-keybindings)
   (sensible-defaults/backup-to-temp-directory)
 #+END_SRC
+
+* org config
+org configuration
+#+BEGIN_SRC emacs-lisp
+  (require 'org)
+  (setq org-agenda-files '("~/org"))
+  (define-key global-map "\C-cl" 'org-store-link)
+  (define-key global-map "\C-ca" 'org-agenda)
+  (setq org-log-done t)
+#+END_SRC
