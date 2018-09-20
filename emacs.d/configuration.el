@@ -31,6 +31,9 @@
 ;;(setq org-ellipsis "⤵")
 (define-key global-map "\C-ca" 'org-agenda)
 
+(setq org-agenda-todo-ignore-scheduled 'future)
+(setq org-agenda-tags-todo-honor-ignore-options t)
+
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
 

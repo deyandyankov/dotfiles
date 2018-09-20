@@ -47,6 +47,12 @@ org configuration
 (define-key global-map "\C-ca" 'org-agenda)
 #+END_SRC
 
+do not show TODOs scheduled for further than the current agenda view
+#+BEGIN_SRC emacs-lisp
+(setq org-agenda-todo-ignore-scheduled 'future)
+(setq org-agenda-tags-todo-honor-ignore-options t)
+#+END_SRC
+
 org bullets
 #+BEGIN_SRC emacs-lisp
 (require 'org-bullets)
