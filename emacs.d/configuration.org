@@ -22,7 +22,7 @@ Use [[https://github.com/hrs/sensible-defaults.el][sensible-defaults.el]] for so
 
 ;; Load the theme (doom-one, doom-molokai, etc); keep in mind that each theme
 ;; may have their own settings.
-(load-theme 'doom-nord t)
+(load-theme 'doom-dracula t)
 
 ;; Enable flashing mode-line on errors
 (doom-themes-visual-bell-config)
@@ -63,4 +63,9 @@ org bullets
 #+BEGIN_SRC emacs-lisp
 (add-hook 'calendar-load-hook (lambda () (calendar-set-date-style 'european)))
 (setq calendar-week-start-day 1)
+#+END_SRC
+* magit
+#+BEGIN_SRC emacs-lisp
+(global-set-key (kbd "C-x g") 'magit-status)
+(global-set-key (kbd "C-x M-g") 'magit-dispatch-popup)
 #+END_SRC

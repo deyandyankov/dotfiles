@@ -11,7 +11,7 @@
 
 ;; Load the theme (doom-one, doom-molokai, etc); keep in mind that each theme
 ;; may have their own settings.
-(load-theme 'doom-nord t)
+(load-theme 'doom-dracula t)
 
 ;; Enable flashing mode-line on errors
 (doom-themes-visual-bell-config)
@@ -39,3 +39,5 @@
 
 (add-hook 'calendar-load-hook (lambda () (calendar-set-date-style 'european)))
 (setq calendar-week-start-day 1)
+
+(global-set-key (kbd "C-x g") 'magit-status)

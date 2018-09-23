@@ -4,3 +4,4 @@
 
 (depends-on "doom-themes")
 (depends-on "org-bullets")
+(depends-on "magit")
