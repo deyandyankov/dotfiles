@@ -40,10 +40,12 @@ Use [[https://github.com/hrs/sensible-defaults.el][sensible-defaults.el]] for so
 org configuration
 #+BEGIN_SRC emacs-lisp
 (require 'org)
-(setq org-agenda-files '("~/org"))
+(require 'ox-twbs)
+(setq org-agenda-files (list "~/org/p.org"
+                             "~/org/vf.org"))
 (setq org-log-done t)
 (setq org-export-coding-system 'utf-8)
-;;(setq org-ellipsis "⤵")
+(setq org-ellipsis "⤵")
 (define-key global-map "\C-ca" 'org-agenda)
 #+END_SRC
 
@@ -57,6 +59,11 @@ org bullets
 #+BEGIN_SRC emacs-lisp
 (require 'org-bullets)
 (add-hook 'org-mode-hook (lambda () (org-bullets-mode 1)))
+#+END_SRC
+
+disable deadline reminders
+#+BEGIN_SRC emacs-lisp
+(setq org-deadline-warning-days 0)
 #+END_SRC
 
 * calendar settings
