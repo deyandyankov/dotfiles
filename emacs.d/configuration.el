@@ -47,18 +47,5 @@
 (global-set-key (kbd "C-x g") 'magit-status)
 (global-set-key (kbd "C-x M-g") 'magit-dispatch-popup)
 
-(add-to-list 'load-path "/Users/deyandyankov/repos/mu/mu4e")
-(require 'mu4e)
-(setq
-  mu4e-mu-binary     "/usr/local/bin/mu"
-  mu4e-maildir       "~/Mail"   ;; top-level Maildir
-  mu4e-sent-folder   "/sent"       ;; folder for sent messages
-  mu4e-drafts-folder "/drafts"     ;; unfinished messages
-  mu4e-trash-folder  "/trash"      ;; trashed messages
-  mu4e-refile-folder "/archive")   ;; saved messages
-(setq
-  mu4e-get-mail-command "offlineimap"   ;; or fetchmail, or ...
-  mu4e-update-interval 300)             ;; update every 5 minutes
-
 (add-to-list 'load-path "~/repos/julia-emacs")
 (require 'julia-mode)
