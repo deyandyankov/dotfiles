@@ -1,0 +1,34 @@
+ls -l
+l
+ll
+source .profile 
+ll
+ll
+l
+cat .profile 
+echo $SHELL
+echo $SHELL
+ls -l
+exit
+ls -l
+echo $SHELL
+alias
+aliases
+source .profile 
+alias
+l
+ll
+echo $SHELL
+cat .profile
+ls -l
+cat .profile
+ls -l
+rm deyan.dyankov.name.crt dyankov.name.pem 
+ls -l
+cd .emacs.d
+cask install
+source ~/.profile
+echo $SHELL
+cat ~/.profile
+cask install
+exit
